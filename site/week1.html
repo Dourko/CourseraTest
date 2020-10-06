@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
+	<script type="text/javaScript">
+
+	function Gruppa(n,spec,kolich) {
+
+//Свойства(номер, специальность, количество)
+
+this.n=n;
+this.spec=spec;
+this.kolich=kolich;
+
+//Метод (добавить в группу k студентов)
+this.add_stud=function add_stud(k) {
+this.kolich+=k;
+document.write('В группу ' + this.n+' специальность '+this.spec + ' добавили '+ k + ' студентов.');
+
+}
+
+}
+
+
+var gr1= new Gruppa(1, "ИСиТ" ,28);
+
+gr1.add_stud(2);
+Gruppa.prototype.kurs=this.kurs;
+gr1.kurs=2;
+document.write("Всего в группе "+gr1.kolich+" человек. <br>");
+
+</script>
+	
+<h1>Hello</h1>
+</body>
+</html>
